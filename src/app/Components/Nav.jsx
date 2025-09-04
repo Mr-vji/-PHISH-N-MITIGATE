@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi"; // 👈 icons for burger & close
+import { FaSignInAlt } from "react-icons/fa"; // 👈 sign-in icon
 
 function Nav() {
    const [isOpen, setIsOpen] = useState(false);
@@ -37,6 +38,15 @@ function Nav() {
                Pricing
             </Link>
          </li>
+         {/* SERVICE kept for desktop only */}
+         <li className="hidden lg:block">
+            <Link
+               href="/service"
+               className="flex items-center gap-1 cursor-pointer hover:text-gray-300 transition-colors duration-300"
+            >
+               SERVICE
+            </Link>
+         </li>
          <li>
             <Link
                href="/"
@@ -51,6 +61,15 @@ function Nav() {
                className="cursor-pointer hover:text-gray-300 transition-colors duration-300"
             >
                CONTACT
+            </Link>
+         </li>
+         <li>
+            <Link
+               href="/login"
+               className="flex items-center gap-2 cursor-pointer hover:text-gray-300 transition-colors duration-300"
+            >
+               <FaSignInAlt className="w-5 h-5" />
+               SIGN IN
             </Link>
          </li>
       </>
