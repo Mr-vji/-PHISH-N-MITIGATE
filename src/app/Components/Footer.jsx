@@ -19,8 +19,8 @@ export default function Footer() {
                      </span>
                   </div>
                   <p className="text-gray-400 mb-6 leading-relaxed">
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec
-                     dui venenatis dignissim.
+                     Train your employees, reduce risks, and protect your business from cyber
+                     threats.
                   </p>
                   <div className="flex space-x-3">
                      <a
@@ -103,10 +103,10 @@ export default function Footer() {
                {/* Section 4: Download App */}
                <div>
                   <h3 className="text-white text-lg font-semibold mb-4">Download App</h3>
-                  <p className="text-gray-400 mb-6 leading-relaxed">
+                  {/* <p className="text-gray-400 mb-6 leading-relaxed">
                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec
                      dui venenatis.
-                  </p>
+                  </p> */}
                   <div className="space-y-4">
                      <a
                         href="https://play.google.com/store"

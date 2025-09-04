@@ -18,7 +18,7 @@ const Plan = ({ title, icon, features, price, popular }) => (
                ${price}
                <span className="text-xl text-gray-400">/mo</span>
             </p>
-            <button className="bg-gradient-to-r from-[#2563EB] to-[#D946EF] text-white font-semibold py-4 px-10 rounded-lg text-lg">
+            <button className="bg-gradient-to-r from-[#2563EB] to-[#2563EB] text-white font-semibold py-4 px-10 rounded-lg text-lg">
                PURCHASE NOW
             </button>
          </div>
@@ -29,7 +29,7 @@ const Plan = ({ title, icon, features, price, popular }) => (
 function PricingPlan() {
    const plans = [
       {
-         title: "Personal",
+         title: "Starter 💡",
          icon: (
             <svg
                xmlns="http://www.w3.org/2000/svg"
@@ -47,16 +47,16 @@ function PricingPlan() {
             </svg>
          ),
          features: [
-            "5 Website",
-            "50GB Disk Space",
-            "50 Email Accounts",
-            "50GB Monthly Bandwidth",
-            "10 Subdomains",
+            "Up to 50 users",
+            "Basic training modules (phishing, password hygiene, data safety)",
+            "Monthly phishing simulation",
+            "Progress dashboard",
+            "Email support",
          ],
-         price: 99,
+         price: 49,
       },
       {
-         title: "Business",
+         title: "Professional 🚀",
          icon: (
             <svg
                xmlns="http://www.w3.org/2000/svg"
@@ -74,16 +74,17 @@ function PricingPlan() {
             </svg>
          ),
          features: [
-            "5 Website",
-            "50GB Disk Space",
-            "50 Email Accounts",
-            "50GB Monthly Bandwidth",
-            "10 Subdomains",
+            "Up to 250 users",
+            "Full training library (phishing, compliance, remote work, social engineering)",
+            "Unlimited phishing simulations",
+            "Interactive video-based learning",
+            "Advanced analytics & reports",
+            "Priority email & chat support",
          ],
          price: 199,
       },
       {
-         title: "Premium",
+         title: "Enterprise 🏢",
          icon: (
             <svg
                xmlns="http://www.w3.org/2000/svg"
@@ -107,11 +108,12 @@ function PricingPlan() {
             </svg>
          ),
          features: [
-            "5 Website",
-            "50GB Disk Space",
-            "50 Email Accounts",
-            "50GB Monthly Bandwidth",
-            "10 Subdomains",
+            "Unlimited users",
+            "Custom training content + branding",
+            "Role-based access & SSO integration",
+            "Dedicated success manager",
+            "Compliance-ready reporting (GDPR, HIPAA, ISO, etc.)",
+            "24/7 premium support",
          ],
          price: 299,
       },

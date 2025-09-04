@@ -26,7 +26,7 @@ function HomePage() {
          <SecondSection />
          <SuperMarquee duration="30s">{marqueeContent}</SuperMarquee>
          {/* <Trust /> */}
-         <ChooseUs />
+         {/* <ChooseUs /> */}
          <PricingPlan />
          {/* <ChooseSection /> */}
          {/* <Price /> */}

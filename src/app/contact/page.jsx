@@ -6,15 +6,16 @@ function Contact() {
          {/* Background decorative elements */}
          <div className="absolute top-[-5rem] left-[-10rem] w-[30rem] h-[30rem] bg-blue-600 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
          <div
-            className="absolute bottom-[-5rem] right-[-10rem] w-[30rem] h-[30rem] bg-fuchsia-500 rounded-full filter blur-3xl opacity-20 animate-pulse"
+            className="absolute bottom-[-5rem] right-[-10rem] w-[30rem] h-[30rem] bg-blue-500 rounded-full filter blur-3xl opacity-20 animate-pulse"
             style={{ animationDelay: "2s" }}
          ></div>
 
          <div className="container mx-auto max-w-2xl w-full relative z-10">
             <div className="text-center mb-12">
-               <span className="bg-[#111827] text-[#00D1C5] text-sm font-semibold px-4 py-1 rounded-full">
+               <span className="bg-[#00a99d] text-white text-lg font-semibold px-4 py-1 rounded-full">
                   Contact Us
                </span>
+
                <h2 className="text-4xl lg:text-5xl font-bold mt-4">Get in Touch</h2>
                <p className="text-gray-400 mt-2">Ready to protect your business? Start today</p>
             </div>
@@ -57,7 +58,7 @@ function Contact() {
                   <div className="text-center">
                      <button
                         type="submit"
-                        className="bg-gradient-to-r from-blue-600 to-fuchsia-500 text-white font-bold py-3 px-10 rounded-md tracking-wider transition-transform transform hover:scale-105"
+                        className="bg-gradient-to-r from-blue-600 to-blue-500 text-white font-bold py-3 px-10 rounded-md tracking-wider transition-transform transform hover:scale-105"
                      >
                         Send Message
                      </button>

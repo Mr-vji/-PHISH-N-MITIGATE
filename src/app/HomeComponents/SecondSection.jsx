@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 function SecondSection() {
@@ -63,13 +64,21 @@ function SecondSection() {
                      {/* What we do for your <br /> Cyber security solutions */}
                   </h2>
                </div>
-               <a
+               {/* <a
                   href="#"
                   className="group flex items-center text-[#00a99d] border border-[#00a99d] px-6 py-3 rounded-lg hover:bg-[#00a99d] hover:text-white transition-colors duration-300 whitespace-nowrap"
                >
-                  View all services
+                  Ready to protect your business? Start today.
                   <ArrowIconUp />
-               </a>
+               </a> */}
+
+               <Link
+                  href="/pricing" // <-- update with your actual route
+                  className="group flex items-center text-[#00a99d] border border-[#00a99d] px-6 py-3 rounded-lg hover:bg-[#00a99d] hover:text-white transition-colors duration-300 whitespace-nowrap"
+               >
+                  Ready to protect your business? Start today.
+                  <ArrowIconUp />
+               </Link>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
