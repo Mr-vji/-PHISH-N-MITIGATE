@@ -1,28 +1,9 @@
 import React from "react";
 
-// --- SVG Icons & Illustrations ---
-
-const MasteryHubLogo = () => (
-   <svg
-      width="48"
-      height="48"
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="text-indigo-800"
-   >
-      <path
-         d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
-         stroke="currentColor"
-         strokeWidth="1.5"
-         strokeLinecap="round"
-         strokeLinejoin="round"
-      />
-   </svg>
-);
+// --- SVG Icons ---
 
 const GoogleIcon = () => (
-   <svg className="w-5 h-5 mr-3" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+   <svg className="w-5 h-5" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
       <path
          fill="#FFC107"
          d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8c-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C12.955 4 4 12.955 4 24s8.955 20 20 20s20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"
@@ -42,157 +23,62 @@ const GoogleIcon = () => (
    </svg>
 );
 
-const ExamIllustration = () => (
-   <svg viewBox="0 0 350 250" xmlns="http://www.w3.org/2000/svg">
-      <g fill="none" fillRule="evenodd">
-         {/* Background elements */}
-         <circle cx="175" cy="125" r="100" fill="#eef2ff" />
-         <path d="M50 50 Q 175 -20 300 50" stroke="#dbeafe" strokeWidth="2" strokeDasharray="5,5" />
-         <path d="M310 80 L 330 90 L 310 100 Z" fill="#93c5fd" />
-         <text x="250" y="40" fontFamily="Arial, sans-serif" fontSize="14" fill="#6c757d">
-            f(x)
-         </text>
-         <text x="200" y="30" fontFamily="Arial, sans-serif" fontSize="14" fill="#6c757d">
-            a²
-         </text>
-         <path d="M130 35 L140 25 L150 35" stroke="#6c757d" strokeWidth="1.5" />
-         <line x1="135" y1="35" x2="145" y2="20" stroke="#6c757d" strokeWidth="1.5" />
-         <text x="160" y="30" fontFamily="Arial, sans-serif" fontSize="14" fill="#6c757d">
-            √x
-         </text>
+const GithubIcon = () => (
+   <svg
+      className="w-5 h-5"
+      fill="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+   >
+      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.565 21.795 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+   </svg>
+);
 
-         {/* Student and Desk */}
-         <g transform="translate(130, 100)">
-            {/* Chair */}
-            <path
-               d="M40 80 L 40 120 L 70 120 L 70 80 Q 70 70 60 70 L 50 70 Q 40 70 40 80"
-               fill="#60a5fa"
-            />
-            <rect x="42" y="118" width="5" height="15" fill="#3b82f6" />
-            <rect x="63" y="118" width="5" height="15" fill="#3b82f6" />
-            <rect x="30" y="75" width="50" height="10" rx="3" fill="#3b82f6" />
-
-            {/* Person */}
-            <circle cx="55" cy="50" r="15" fill="#f5e1d3" />
-            <path d="M55 35 L 50 45 L 60 45 Z" fill="#333" />
-            <path d="M55 65 C 45 75, 45 95, 55 110 C 65 95, 65 75, 55 65" fill="#f8f9fa" />
-            <path
-               d="M55 110 L 45 130 L 50 130 L 60 115 L 65 130 L 70 130 L 60 110"
-               fill="#495057"
-            />
-            {/* Arm */}
-            <path
-               d="M65 80 C 80 85, 90 95, 100 100"
-               stroke="#f5e1d3"
-               strokeWidth="6"
-               strokeLinecap="round"
-            />
-         </g>
-
-         {/* Desk and papers */}
-         <path d="M70 190 L 200 170 L 205 180 L 75 200 Z" fill="#a08d7e" />
-         <rect
-            x="75"
-            y="140"
-            width="100"
-            height="60"
-            rx="5"
-            ry="5"
-            fill="#ffffff"
-            stroke="#ced4da"
-            transform="rotate(-10 125 170)"
-         />
-         <rect
-            x="80"
-            y="150"
-            width="80"
-            height="3"
-            fill="#e9ecef"
-            transform="rotate(-10 120 165)"
-         />
-         <rect
-            x="80"
-            y="160"
-            width="80"
-            height="3"
-            fill="#e9ecef"
-            transform="rotate(-10 120 175)"
-         />
-         <rect
-            x="80"
-            y="170"
-            width="80"
-            height="3"
-            fill="#e9ecef"
-            transform="rotate(-10 120 185)"
-         />
-         <path d="M170 150 L 200 155 L 195 125 Z" fill="#93c5fd" />
-
-         {/* Pencil */}
-         <path d="M175 145 l 20 -5 l 2 2 l -20 5 Z" fill="#fbc02d" />
-         <path d="M195 140 l 5 -1 l -2 5 Z" fill="#333" />
-
-         {/* Backpack */}
-         <path
-            d="M240 160 Q 230 150 240 140 L 270 140 Q 280 150 270 160 L 270 190 Q 270 200 260 200 L 250 200 Q 240 200 240 190 Z"
-            fill="#60a5fa"
-         />
-         <rect x="245" y="150" width="20" height="5" rx="2" fill="#3b82f6" />
-
-         {/* Plant */}
-         <path d="M60 200 C 60 190, 70 190, 70 200 Z" fill="#8b5a2b" />
-         <path d="M65 190 C 55 180, 55 170, 65 170 C 75 170, 75 180, 65 190" fill="#3b82f6" />
-         <path d="M65 180 C 60 170, 70 165, 75 175" stroke="#3b82f6" strokeWidth="2" />
-      </g>
+const FacebookIcon = () => (
+   <svg
+      className="w-5 h-5"
+      fill="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+   >
+      <path d="M22.675 0h-21.35C.589 0 0 .589 0 1.325v21.35C0 23.41.589 24 1.325 24H12.82v-9.29h-3.128v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.732 0 1.325-.59 1.325-1.325V1.325C24 .589 23.411 0 22.675 0z" />
    </svg>
 );
 
 function Login() {
    return (
-      <div className="bg-gradient-to-r from-blue-500 to-indigo-500 min-h-screen flex items-center justify-center p-4">
-         <div className="w-full max-w-5xl bg-white shadow-2xl rounded-2xl flex overflow-hidden">
-            {/* Left Side: Illustration and Branding */}
-            <div className="hidden lg:flex flex-col items-center justify-center w-1/2 bg-blue-50 p-12 text-center">
-               <ExamIllustration />
-               <h1 className="text-3xl font-bold text-gray-800 mt-6">Exam Mastery Hub</h1>
-               <p className="text-gray-600 mt-2 max-w-sm">
-                  Unleash Your Academic Success with Exam Mastery Hub's Exam Excellence Platform
-               </p>
-               <div className="flex space-x-2 mt-8">
-                  <div className="w-3 h-3 bg-blue-600 rounded-full"></div>
-                  <div className="w-3 h-3 bg-gray-300 rounded-full"></div>
-                  <div className="w-3 h-3 bg-gray-300 rounded-full"></div>
-               </div>
-            </div>
+      <div className="bg-[#0d1a2e] min-h-screen flex items-center justify-center p-4 relative overflow-hidden font-sans">
+         {/* Background Glows */}
+         <div className="absolute top-0 left-0 w-1/2 h-1/2 bg-blue-600/30 rounded-full filter blur-3xl opacity-40 animate-pulse"></div>
+         <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-cyan-400/30 rounded-full filter blur-3xl opacity-40 animate-pulse delay-2000"></div>
 
-            {/* Right Side: Login Form */}
-            <div className="w-full lg:w-1/2 p-8 md:p-16 flex flex-col justify-center">
-               <div className="flex items-center justify-center mb-8">
-                  <MasteryHubLogo />
-                  <h2 className="text-2xl font-bold text-gray-700 ml-3 tracking-wider">
-                     MASTERY HUB
-                  </h2>
-               </div>
+         <div className="w-full max-w-5xl bg-black/20 backdrop-blur-xl shadow-2xl rounded-3xl flex overflow-hidden z-10 border border-white/10">
+            {/* Left Side: Login Form */}
+            <div className="w-full lg:w-1/2 p-8 sm:p-12 flex flex-col justify-center">
+               <h1 className="text-2xl font-bold text-white mb-2 tracking-wider">
+                  PHISH N MITIGATE
+               </h1>
+               <p className="text-gray-400 mb-8">Please Enter your Account details</p>
 
                <form>
-                  <div>
+                  <div className="mb-6">
                      <label
-                        className="text-sm font-semibold text-gray-600 mb-2 block"
-                        htmlFor="username"
+                        className="text-sm font-semibold text-gray-300 mb-2 block"
+                        htmlFor="email"
                      >
-                        Username or email
+                        Email
                      </label>
                      <input
-                        type="text"
-                        id="username"
-                        defaultValue="johnsmith007"
-                        className="w-full px-4 py-3 rounded-lg bg-gray-100 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition"
+                        type="email"
+                        id="email"
+                        defaultValue="johndoe@gmail.com"
+                        className="w-full px-5 py-3 rounded-xl bg-gray-900/50 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 transition"
                      />
                   </div>
 
-                  <div className="mt-6">
+                  <div>
                      <label
-                        className="text-sm font-semibold text-gray-600 mb-2 block"
+                        className="text-sm font-semibold text-gray-300 mb-2 block"
                         htmlFor="password"
                      >
                         Password
@@ -201,41 +87,55 @@ function Login() {
                         type="password"
                         id="password"
                         defaultValue="••••••••••"
-                        className="w-full px-4 py-3 rounded-lg bg-gray-100 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition"
+                        className="w-full px-5 py-3 rounded-xl bg-gray-900/50 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 transition"
                      />
                   </div>
 
-                  <div className="text-right mt-3">
-                     <a href="#" className="text-sm text-blue-600 hover:underline">
-                        Forgot password?
+                  <div className="text-right mt-4">
+                     <a href="#" className="text-sm text-cyan-400 hover:underline">
+                        Forgot Password
                      </a>
                   </div>
 
                   <button
                      type="submit"
-                     className="w-full bg-indigo-700 text-white font-bold py-3 px-4 rounded-lg mt-8 hover:bg-indigo-800 transition-colors"
+                     className="w-full bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-bold py-3 px-4 rounded-xl mt-8 hover:opacity-90 shadow-lg shadow-cyan-500/20 transition-all duration-300 transform hover:scale-105"
                   >
                      Sign in
                   </button>
                </form>
 
-               <div className="flex items-center my-8">
-                  <hr className="w-full border-gray-300" />
-                  <span className="px-4 text-gray-500 text-sm">or</span>
-                  <hr className="w-full border-gray-300" />
+               <div className="flex items-center justify-center space-x-4 my-8">
+                  <button className="w-11 h-11 flex items-center justify-center bg-gray-900/50 border border-gray-700 text-white rounded-full hover:bg-gray-800 transition-colors">
+                     <GoogleIcon />
+                  </button>
+                  <button className="w-11 h-11 flex items-center justify-center bg-gray-900/50 border border-gray-700 text-white rounded-full hover:bg-gray-800 transition-colors">
+                     <GithubIcon />
+                  </button>
+                  <button className="w-11 h-11 flex items-center justify-center bg-gray-900/50 border border-gray-700 text-white rounded-full hover:bg-gray-800 transition-colors">
+                     <FacebookIcon />
+                  </button>
                </div>
 
-               <button className="w-full flex items-center justify-center bg-white border border-gray-300 text-gray-700 font-semibold py-3 px-4 rounded-lg hover:bg-gray-100 transition-colors">
-                  <GoogleIcon />
-                  Sign in with Google
-               </button>
-
-               <p className="text-center text-sm text-gray-600 mt-10">
-                  Are you new?{" "}
-                  <a href="#" className="text-blue-600 font-semibold hover:underline">
-                     Create an Account
+               <p className="text-center text-sm text-gray-400">
+                  <a href="#" className="text-cyan-400 font-semibold hover:underline">
+                     Create an account
                   </a>
                </p>
+            </div>
+
+            {/* Right Side: Title */}
+            <div
+               className="hidden lg:flex w-1/2 p-10 bg-gradient-to-br from-blue-900/50 to-cyan-800/50 rounded-r-3xl relative items-center justify-center"
+               style={{
+                  borderTopRightRadius: "1.5rem",
+                  borderBottomRightRadius: "1.5rem",
+                  clipPath: "polygon(25% 0, 100% 0, 100% 100%, 25% 100%, 0 50%)",
+               }}
+            >
+               <h1 className="text-8xl font-black text-white uppercase transform -rotate-90 tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-300 opacity-50">
+                  Sign In
+               </h1>
             </div>
          </div>
       </div>
