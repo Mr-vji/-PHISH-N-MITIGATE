@@ -82,10 +82,11 @@ function Nav() {
                {navLinks}
             </ul>
 
-            <button className="hidden lg:block bg-gradient-to-r from-blue-600 to-blue-500 text-white font-bold py-3 px-7 rounded-md tracking-wider">
-               GET STARTED NOW
-            </button>
-
+            <Link href="/pricing">
+               <button className="hidden lg:block bg-gradient-to-r from-blue-600 to-blue-500 text-white font-bold py-3 px-7 rounded-md tracking-wider cursor-pointer">
+                  GET STARTED NOW
+               </button>
+            </Link>
             {/* Mobile Menu Button */}
             <div className="lg:hidden">
                <button onClick={toggleMenu} aria-label="Toggle menu">
