@@ -39,14 +39,7 @@ function Nav() {
             </Link>
          </li>
          {/* SERVICE kept for desktop only */}
-         <li className="hidden lg:block">
-            <Link
-               href="/service"
-               className="flex items-center gap-1 cursor-pointer hover:text-gray-300 transition-colors duration-300"
-            >
-               SERVICE
-            </Link>
-         </li>
+
          <li>
             <Link
                href="/"
