@@ -31,14 +31,6 @@ function Nav() {
          </li>
          <li>
             <Link
-               href="/"
-               className="flex items-center gap-1 cursor-pointer hover:text-gray-300 transition-colors duration-300"
-            >
-               SERVICES
-            </Link>
-         </li>
-         <li>
-            <Link
                href="/pricing"
                className="flex items-center gap-1 cursor-pointer hover:text-gray-300 transition-colors duration-300"
             >

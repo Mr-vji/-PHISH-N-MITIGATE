@@ -35,7 +35,7 @@ function HeroSection() {
                   <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-wide">
                      Strengthen Your Organization’s Security Awareness
                   </h1>
-                  <p className="mt-4 sm:mt-6 text-lg sm:text-xl md:text-2xl lg:text-[25px] text-gray-300">
+                  <p className="mt-4 sm:mt-6 text-lg sm:text-xl md:text-2xl lg:text-[25px] text-gray-400">
                      Train your employees, reduce risks, and protect your business from cyber
                      threats.
                   </p>
