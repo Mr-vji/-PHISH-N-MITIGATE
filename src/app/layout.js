@@ -2,6 +2,7 @@ import { Exo } from "next/font/google";
 import "./globals.css";
 import Nav from "./Components/Nav";
 import Footer from "./Components/Footer";
+import ClientLayout from "./ClientLayout";
 
 const exo = Exo({
    variable: "--font-exo",
@@ -19,9 +20,7 @@ export default function RootLayout({ children }) {
    return (
       <html lang="en">
          <body className={`${exo.variable} antialiased`}>
-            <Nav />
-            {children}
-            <Footer />
+            <ClientLayout>{children}</ClientLayout>
          </body>
       </html>
    );

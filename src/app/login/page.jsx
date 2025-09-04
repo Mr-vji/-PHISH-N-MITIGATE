@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 // --- SVG Icons ---
@@ -55,9 +56,12 @@ function Login() {
          <div className="w-full max-w-5xl bg-black/20 backdrop-blur-xl shadow-2xl rounded-3xl flex overflow-hidden z-10 border border-white/10">
             {/* Left Side: Login Form */}
             <div className="w-full lg:w-1/2 p-8 sm:p-12 flex flex-col justify-center">
-               <h1 className="text-2xl font-bold text-white mb-2 tracking-wider">
-                  PHISH N MITIGATE
-               </h1>
+               <Link href="/">
+                  <h1 className="text-2xl font-bold text-white mb-2 tracking-wider">
+                     PHISH N MITIGATE
+                  </h1>
+               </Link>
+
                <p className="text-gray-400 mb-8">Please Enter your Account details</p>
 
                <form>
@@ -71,7 +75,7 @@ function Login() {
                      <input
                         type="email"
                         id="email"
-                        defaultValue="johndoe@gmail.com"
+                        // defaultValue="johndoe@gmail.com"
                         className="w-full px-5 py-3 rounded-xl bg-gray-900/50 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 transition"
                      />
                   </div>
@@ -86,7 +90,7 @@ function Login() {
                      <input
                         type="password"
                         id="password"
-                        defaultValue="••••••••••"
+                        // defaultValue="••••••••••"
                         className="w-full px-5 py-3 rounded-xl bg-gray-900/50 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 transition"
                      />
                   </div>
@@ -95,6 +99,22 @@ function Login() {
                      <a href="#" className="text-sm text-cyan-400 hover:underline">
                         Forgot Password
                      </a>
+                  </div>
+
+                  {/* ReCAPTCHA-like component */}
+                  <div className="flex items-center justify-between bg-white rounded-md w-full max-w-xs h-16 p-3 shadow-md border border-gray-300 text-black mt-6">
+                     <div className="flex items-center">
+                        <input
+                           type="checkbox"
+                           className="form-checkbox h-5 w-5 text-blue-600 rounded mr-2"
+                        />
+                        <label className="text-sm">I'm not a robot</label>
+                     </div>
+                     <img
+                        src="https://www.gstatic.com/recaptcha/api2/logo_48.png"
+                        alt="reCAPTCHA logo"
+                        className="h-10"
+                     />
                   </div>
 
                   <button
